@@ -6,21 +6,21 @@ import AddContact from "./AddContact";
 import EditContacts from "./EditContacts";
 import ContactList from "./ContactList";
 import ContactDetails from "./ContactDetails";
-import { ContactsCRUDContextProvider } from "../context/ContactsCrudContext";
+import { ContactsCrudContextProvider } from "../context/ContactsCrudContext";
 
 function App() {
   return (
     <div className="container-fluid m-0 p-0" style={{backgroundColor:'#E9EFC0' }}>
       <Router>
         <Header />
-        <ContactsCRUDContextProvider>
+        <ContactsCrudContextProvider>
           <Routes>
             <Route path="/" element={<ContactList/>}/>
             <Route path="/add" element={<AddContact/>}/>
             <Route path="/edit" element={<EditContacts/> } />
             <Route path="/contact/:id" element={<ContactDetails/>}/>
           </Routes>
-        </ContactsCRUDContextProvider>
+        </ContactsCrudContextProvider>
       </Router>
     </div>
   );

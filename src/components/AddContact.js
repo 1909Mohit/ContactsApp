@@ -22,7 +22,7 @@ const AddContact = () => {
   };
 
   return (
-    <div className="container " style={{backgroundColor:'#E9EFC0' }}>
+    <main className="container " style={{backgroundColor:'#E9EFC0' }}>
       <h2 className="">Add Contact</h2>
       <form className="mb-0 " onSubmit={add}>
         <div className="mb-3">
@@ -58,7 +58,7 @@ const AddContact = () => {
           </button>
         </div>
       </form>
-    </div>
+    </main>
   );
 };
 
